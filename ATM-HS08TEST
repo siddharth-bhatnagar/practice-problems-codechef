@@ -1,0 +1,19 @@
+// CodeChef Practice Problem - ATM - HS08TEST
+#include <stdio.h>
+int main()
+{
+    int withdrawal_amount; float account_balance, remaining_balance;
+    scanf("%d%f", &withdrawal_amount, &account_balance);
+    if((withdrawal_amount+0.50)>=account_balance)
+    {
+        printf("\n%f", account_balance);
+    }
+    else if(withdrawal_amount%5==0)
+    { 
+        remaining_balance = account_balance - withdrawal_amount - 0.50;
+        printf("\n%0.2f", remaining_balance);
+    }
+    else
+    printf("\n%0.2f",account_balance);
+    return 0;
+}
