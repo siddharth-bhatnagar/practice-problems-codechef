@@ -1,0 +1,14 @@
+// Add Two Numbers - Codechef Practice Problem - FLOW001
+#include<stdio.h>
+int main()
+{
+    int T, A, B, C, SUM = 0;
+    scanf("%d", &T);
+    for(C = 1; C <= T ; ++C)
+    {
+        scanf("\n%d%d",&A,&B);
+        SUM = A + B;
+        printf("%d\n", SUM);
+    }
+    return 0;
+}
