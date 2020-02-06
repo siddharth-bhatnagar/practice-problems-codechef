@@ -1,0 +1,20 @@
+// CodeChef Practice Problem - Flatland - ICL1902
+#include <stdio.h>
+#include <math.h>
+int main() {
+	int t, n, s, c;
+	scanf("%d",&t);
+	for(int i=1 ; i <= t ; i++)
+	{ 
+	    scanf("%d", &n);
+	    while(n>0)
+	    {
+	        s = sqrt (n);
+	        n = n - s*s;
+	        ++c;
+	    }
+	    printf("\n%d", c);
+	    c=0;
+	}    
+	return 0;
+}
