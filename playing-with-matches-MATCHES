@@ -1,0 +1,35 @@
+// CodeChef Practice Problem - Playing with Matches - MATCHES
+
+#include <stdio.h>
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int t, a, b, sum, rem, c, i;
+    scanf("%d", &t);
+    for(i=1 ; i<=t; i++)
+    {
+        scanf("%d%d", &a, &b);
+        sum = a + b;
+        while(sum>0)
+        {
+            rem = sum % 10;
+           if(rem==0||rem==6||rem==9)
+           c+=6;
+           else if(rem==1)
+           c+=2;
+           else if(rem==2||rem==3||rem==5)
+           c+=5;
+           else if(rem==4)
+           c+=4;
+           else if(rem==7)
+           c+=3;
+           else
+           c+=7;
+           sum=(sum-rem)/10;
+        }
+        printf("\n%d", c);
+        sum = 0; rem = 0; c= 0; 
+    }return 0;
+}
